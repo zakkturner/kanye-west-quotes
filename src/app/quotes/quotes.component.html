@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="quote">
+    <h3 class="text" *ngIf="quote == ''">
+      Click button to be blessed with knowledge from Ye
+    </h3>
+    <h3 class="text" *ngIf="quote !== ''">"{{ quote }}" - The Honorable Ye</h3>
+  </div>
+
+  <button class="btn" (click)="showQuote()">Get quote from Ye</button>
+</div>
